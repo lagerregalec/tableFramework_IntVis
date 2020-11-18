@@ -308,8 +308,13 @@ function show3D() {
         }
 
         for (let i = 0; i < co2Bubbles.length; i++) {
+<<<<<<< Updated upstream
             let vector = horizontalToCartesian(co2Bubbles[i].lat, co2Bubbles[i].lon, r + 20);
             //drawSphere(vector.x, vector.y, vector.z, co2Bubbles[i].size);
+=======
+            let vector = horizontalToCartesian(co2Bubbles[i].lat, co2Bubbles[i].lon, r);
+            drawSphere(vector.x, vector.y, vector.z, co2Bubbles[i].size);
+>>>>>>> Stashed changes
         }
 
         drawLine(-tPS.x, tPS.y, tPS.z, -tPE.x, tPE.y, tPE.z, 0, 255, 0)
